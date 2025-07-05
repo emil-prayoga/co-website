@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project RevoU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,92 +12,76 @@
     <div class="logo">TechNova</div>
     <nav>
       <ul>
-        <li><a class="nav-btn" href="#home">Home</a></li>
-        <li><a class="nav-btn" href="#about">Our Profile</a></li>
-        <li><a class="nav-btn" href="#service">Service</a></li>
-        <li><a class="nav-btn" href="#message">Message Us</a></li>
+        <li><a class="nav-btn" href="#hero">Home</a></li>
+        <li><a class="nav-btn" href="#about">About</a></li>
+        <li><a class="nav-btn" href="#services">Service</a></li>
+        <li><a class="nav-btn" href="#contact">Message</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="welcome">
-      <h2>Hi, Welcome To TechNova</h2>
-      <p>
-        Kami adalah platform pembelajaran digital yang membekali Anda dengan keterampilan teknologi masa kini. Yuk jelajahi layanan kami di bawah ini!
-      </p>
-      <img src="https://ychef.files.bbci.co.uk/1280x640/p0725jtq.jpeg" alt="gambar" class="banner-img" />
-    </section>
+    <section id="hero" class="hero">
+    <div class="container">
+      <h1 id="welcomeText">Hi, Welcome to TechNova</h1>
+      <p>Kami adalah platform pembelajaran digital yang membekali Anda dengan keterampilan teknologi masa kini. Temukan layanan yang sesuai dengan minat dan tujuan karier Anda.</p>
+    </div>
+  </section>
 
-    <aside id="message" class="message-us">
-      <h2>Message Us</h2>
-      <p>Kami akan menghubungi Anda dalam 1x24 jam setelah menerima data Anda.</p>
-      <div class="form-section">
-        <form id="messageForm">
-          <label>Nama:<br />
-          <input type="text" id="name" placeholder="Your Name" required/>
-        </label>
-        <label>Email:<br />
-          <input type="email" id="email" placeholder="Your Email" />
-        </label>
-          <label>Pesan:<br />
-            <textarea id="userMessage" placeholder="Write Your Message"></textarea>
-          </label>
-          <button type="submit">Submit</button>
-  </ul>
-</div>
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Tentang TechNova</h2>
+      <p>TechNova adalah lembaga pendidikan teknologi yang berfokus pada peningkatan keterampilan digital melalui program intensif dan kolaboratif. Kami berkomitmen membantu masyarakat Indonesia memasuki dunia kerja digital dengan percaya diri dan kompeten.</p>
+    </div>
+  </section>
 
-        </form>
-      </div>
-    </aside>
+  <section id="services" class="services">
+  <div class="container">
+    <h2>Layanan Kami</h2>
+    <p>Berikut aktivitas yang dilakukan pelajar dan profesional selama mengikuti program intensif Web Development, Data Analytics, dan Digital Marketing bersama TechNova.</p>
+    <div class="gallery">
 
-    <article id="about" class="deskripsi">
-      <h2>About</h2>
-      <p> <strong>TechNova</strong> adalah lembaga pendidikan teknologi yang berfokus pada peningkatan keterampilan digital 
-        melalui program intensif dan kolaboratif. Kami berkomitmen untuk membantu masyarakat Indonesia 
-        memasuki dunia kerja digital dengan percaya diri dan kompeten.</p>
-      <p>  <strong>TechNova</strong> memiliki visi menjadi lembaga pendidikan digital terdepan yang mencetak talenta teknologi terbaik di 
-        Asia Tenggara. Untuk mencapai visi tersebut, kami menyediakan program pendidikan digital berkualitas tinggi dan 
-        relevan dengan industri, memberikan pengalaman belajar kolaboratif berbasis proyek nyata, menjembatani lulusan 
-        dengan peluang kerja melalui koneksi industri dan dukungan karier, serta berinovasi dalam metode pembelajaran 
-        yang inklusif dan adaptif.</p>
-    </article>
-
-    <article id="service" class="service-section">
-      <h2>Service</h2>
-      <p>Di <strong>TechNova</strong>, kami percaya bahwa pembelajaran terbaik terjadi melalui praktik langsung. 
-      Berikut ini adalah gambaran aktivitas yang dilakukan oleh para pelajar atau pekerja selama mengikuti program intensif 
-      di bidang Web Development, Data Analytics, dan Digital Marketing.
-      </p>
-      <div class="service-gallery">
-        <div class="project">
-          <img src="https://as2.ftcdn.net/jpg/05/27/80/65/1000_F_527806535_quiqbUxsT75OnRaqGvoZcnDXuSvdSZ30.jpg" alt="Project 1" />
-          <h4>Belajar Membuat Website Responsif</h4>
-        </div>
-        <div class="project">
-          <img src="https://www.benchmarkone.com/wp-content/uploads/2022/03/digital-marketing-team.png" alt="Project 2" />
-          <h4>Analisis Data dan Kolaborasi Tim</h4>
-        </div>
-        <div class="project">
-          <img src="https://www.reliablesoft.net/wp-content/uploads/2021/10/digital-marketing-team.webp" alt="Project 3" />
-          <h4>Simulasi Kampanye Digital Marketing</h4>
+      <div class="gallery-item">
+        <img src="https://i.ytimg.com/vi/IhrFpwVXIlk/hq720.jpg" alt="Belajar Website">
+        <div class="overlay">
+          <p>Belajar Website</p>
         </div>
       </div>
-    </article>
 
-    <article id="enjoy" class="enjoy">
-      <h2>Enjoy Our Services</h2>
-      <p>Sampai Jumpa di Kelas!. Terima kasih telah mampir dan meluangkan waktu untuk mengenal <strong>TechNova</strong>. 
-      Kami sangat menghargai setiap kunjungan, karena kami percaya bahwa perubahan besar dimulai dari langkah kecil, 
-      termasuk dari rasa ingin tahu seperti yang kamu tunjukkan hari ini.
-Di <strong>TechNova</strong>, kami berkomitmen menghadirkan pengalaman belajar digital yang interaktif, relevan, dan menyenangkan. Bergabunglah bersama ribuan pembelajar lain untuk mengembangkan keterampilan teknologi yang kamu butuhkan di era digital ini. Mari belajar, tumbuh, dan bertransformasi bersama!. Sampai bertemu di kelas digital kami. </p>
-    </article>
-  </main>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?w=600&auto=format&fit=crop&q=60" alt="Data Analytics">
+        <div class="overlay">
+          <p>Visualisasi Data</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://www.qoalaplus.com/media/wp-content/uploads/2022/07/Strategi-Pemasaran-Digital-atau-Digital-Marketing-Strategy.jpg" alt="Digital Marketing">
+        <div class="overlay">
+          <p>Gali Strategi Relevan</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Hubungi Kami</h2>
+      <form>
+        <input type="text" placeholder="Nama Anda" required>
+        <input type="email" placeholder="Email Anda" required>
+        <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
 
   <footer>
-     &copy; <span id="year"></span> TechNova. All rights reserved.
+    &copy; <span id="year"></span> TechNova. All rights reserved.
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

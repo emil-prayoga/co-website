@@ -1,8 +1,24 @@
+function typeEffect(element, text, speed = 80) {
+  element.textContent = "";
+  let i = 0;
+  function typing() {
+    if (i < text.length) {
+      element.textContent += text.charAt(i);
+      i++;
+      setTimeout(typing, speed);
+    }
+  }
+  typing();
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const userName = prompt("Masukkan nama Anda:");
-  if (userName) {
-    document.getElementById("welcomeText").textContent = `Hi ${userName}, Welcome To Website`;
-  }
+  const welcomeElement = document.getElementById("welcomeText");
+  const finalText = userName
+    ? `Hi ${userName}, Welcome To TechNova`
+    : "Hi, Welcome To TechNova";
+
+  typeEffect(welcomeElement, finalText, 80);
 
 document.getElementById("year").textContent = new Date().getFullYear();
 document.addEventListener("DOMContentLoaded", function () {
@@ -43,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <b>Nama:</b> ${name}<br>
       <b>Email:</b> ${email}<br>
       <b>Pesan:</b> ${userMessage}
-    `;
+     `;
+    });
   });
-});
 });
