@@ -1,4 +1,6 @@
-* {
+* ,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,14 +10,17 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   text-align: justify;
+  overflow-x: hidden;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  height: 100px;
+  padding: 16px;
+  gap: 8px;
 }
+
 
 section {
   width: 100%;
@@ -44,15 +49,13 @@ section {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  margin-left: 200px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 4px;
+  gap: 2px;
   margin: 0;
-  padding: 200px;
 }
 
 .nav-btn {
@@ -68,19 +71,6 @@ nav ul {
 .nav-btn:hover {
   background-color: #000000;
   color: #ffffff;
-}
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 2px;
-  }
 }
 
 .about {
@@ -108,18 +98,75 @@ nav ul {
   height: 200px;
 }
 
+@media (max-width: 769px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .gallery-item {
+    flex: none;
+    width: 100%;
+    max-width: 100%; 
+    margin: 0;
+    padding: 0;
+  }
+
+  .services .gallery img,
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
 .gallery-item {
   position: relative;
   overflow: hidden;
-  cursor: pointer;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .gallery-item img {
+  border-radius: 8px;
   width: 100%;
-  height: auto;
-  transition: transform 0.4s ease;
+  height: 200px;
+  
+  display: block;
+  transition: transform 0.3s;
 }
+
+.gallery-item .overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
 
 .gallery-item .overlay {
   position: absolute;
@@ -138,15 +185,6 @@ nav ul {
   padding: 16px;
   font-size: 16px;
 }
-
-.gallery-item:hover img {
-  transform: scale(1.2); 
-}
-
-.gallery-item:hover .overlay {
-  opacity: 1; 
-}
-
 
 .contact {
   background-color: #000;
