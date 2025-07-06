@@ -1,6 +1,4 @@
-* ,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -30,6 +28,9 @@ section {
 .container {
   max-width: 800px;
   margin: 0 auto;
+}
+.container h2 {
+  text-align: center;
 }
 
 .hero {
@@ -189,6 +190,10 @@ nav ul {
 .contact {
   background-color: #000;
   color: #fff;
+}
+
+.contact h2 {
+  margin-bottom: 8px; 
 }
 
 .contact form {
