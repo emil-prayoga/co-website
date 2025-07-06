@@ -19,7 +19,6 @@ header {
   gap: 8px;
 }
 
-
 section {
   width: 100%;
   padding: 60px 20px;
@@ -29,6 +28,7 @@ section {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .container h2 {
   text-align: center;
 }
@@ -38,15 +38,18 @@ section {
   color: #fff;
   text-align: center;
 }
+
 .hero h1 {
   font-size: 32px;
   margin-bottom: 16px;
 }
+
 .hero p {
   font-size: 18px;
   max-width: 600px;
   margin: 0 auto;
 }
+
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -55,7 +58,7 @@ section {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 2px;
+  gap: 8px;
   margin: 0;
 }
 
@@ -167,7 +170,6 @@ nav ul {
 .gallery-item:hover .overlay {
   opacity: 1;
 }
-
 
 .gallery-item .overlay {
   position: absolute;
