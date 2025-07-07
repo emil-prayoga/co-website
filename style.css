@@ -50,6 +50,16 @@ section {
   margin: 0 auto;
 }
 
+.typing::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -75,6 +85,17 @@ nav ul {
 .nav-btn:hover {
   background-color: #000000;
   color: #ffffff;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about {

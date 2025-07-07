@@ -8,74 +8,74 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">TechNova</div>
-    <nav>
-      <ul>
-        <li><a class="nav-btn" href="#hero">Home</a></li>
-        <li><a class="nav-btn" href="#about">About</a></li>
-        <li><a class="nav-btn" href="#services">Service</a></li>
-        <li><a class="nav-btn" href="#contact">Message</a></li>
-      </ul>
-    </nav>
-  </header>
-
+<header>
+  <div class="logo fade-in">TechNova</div>
+  <nav class="fade-in">
+    <ul>
+      <li><a class="nav-btn" href="#hero">Home</a></li>
+      <li><a class="nav-btn" href="#about">About</a></li>
+      <li><a class="nav-btn" href="#services">Service</a></li>
+      <li><a class="nav-btn" href="#contact">Message</a></li>
+    </ul>
+  </nav>
+</header>
   <main>
-    <section id="hero" class="hero">
-    <div class="container">
-      <h1 id="welcomeText">Hi, Welcome to TechNova</h1>
-      <p>Kami adalah platform pembelajaran digital yang membekali Anda dengan keterampilan teknologi masa kini. Temukan layanan yang sesuai dengan minat dan tujuan karier Anda.</p>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="container">
-      <h2>Tentang TechNova</h2>
-      <p>TechNova adalah lembaga pendidikan teknologi yang berfokus pada peningkatan keterampilan digital melalui program intensif dan kolaboratif. Kami berkomitmen membantu masyarakat Indonesia memasuki dunia kerja digital dengan percaya diri dan kompeten.</p>
-    </div>
-  </section>
-
-  <section id="services" class="services">
-  <div class="container">
-    <h2>Layanan Kami</h2>
-    <p>Berikut aktivitas yang dilakukan pelajar dan profesional selama mengikuti program intensif Web Development, Data Analytics, dan Digital Marketing bersama TechNova.</p>
-    <div class="gallery">
-
-      <div class="gallery-item">
-        <img src="https://i.ytimg.com/vi/IhrFpwVXIlk/hq720.jpg" alt="Belajar Website">
-        <div class="overlay"> Belajar Website </div>
+    <section id="hero" class="hero fade-in">
+      <div class="container">
+        <h1 id="welcomeText">Hi, Welcome to TechNova</h1>
+        <p>
+          Kami adalah platform pembelajaran digital yang membekali Anda dengan keterampilan teknologi masa kini.
+          Temukan layanan yang sesuai dengan minat dan tujuan karier Anda.
+        </p>
       </div>
-
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?w=600&auto=format&fit=crop&q=60" alt="Data Analytics">
-        <div class="overlay"> Visualisasi Data</div>
+    </section>
+    <section id="about" class="about fade-in">
+      <div class="container">
+        <h2>Tentang TechNova</h2>
+        <p>
+          TechNova adalah lembaga pendidikan teknologi yang berfokus pada peningkatan keterampilan digital
+          melalui program intensif dan kolaboratif. Kami berkomitmen membantu masyarakat Indonesia
+          memasuki dunia kerja digital dengan percaya diri dan kompeten.
+        </p>
       </div>
-
-      <div class="gallery-item">
-        <img src="https://www.qoalaplus.com/media/wp-content/uploads/2022/07/Strategi-Pemasaran-Digital-atau-Digital-Marketing-Strategy.jpg" alt="Digital Marketing">
-        <div class="overlay"> Gali Strategi Relevan</div>
+    </section>
+    <section id="services" class="services fade-in">
+      <div class="container">
+        <h2>Layanan Kami</h2>
+        <p>
+          Berikut aktivitas yang dilakukan pelajar dan profesional selama mengikuti program intensif
+          Web Development, Data Analytics, dan Digital Marketing bersama TechNova.
+        </p>
+        <div class="gallery">
+          <div class="gallery-item fade-in">
+            <img src="https://i.ytimg.com/vi/IhrFpwVXIlk/hq720.jpg" alt="Belajar Website">
+            <div class="overlay">Belajar Website</div>
+          </div>
+          <div class="gallery-item fade-in">
+            <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?w=600&auto=format&fit=crop&q=60" alt="Data Analytics">
+            <div class="overlay">Visualisasi Data</div>
+          </div>
+          <div class="gallery-item fade-in">
+            <img src="https://www.qoalaplus.com/media/wp-content/uploads/2022/07/Strategi-Pemasaran-Digital-atau-Digital-Marketing-Strategy.jpg" alt="Digital Marketing">
+            <div class="overlay">Gali Strategi Relevan</div>
+          </div>
+        </div>
       </div>
-
-    </div>
-  </div>
-</section>
-
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Hubungi Kami</h2>
-      <form>
-        <input type="text" placeholder="Nama Anda" required>
-        <input type="email" placeholder="Email Anda" required>
-        <textarea placeholder="Pesan Anda" rows="5" required></textarea>
-        <button type="submit">Kirim Pesan</button>
-      </form>
-    </div>
-  </section>
-
+    </section>
+    <section id="contact" class="contact fade-in">
+      <div class="container">
+        <h2>Hubungi Kami</h2>
+        <form id="messageForm" class="fade-in">
+          <input type="text" id="name" placeholder="Nama Anda" required>
+          <input type="email" id="email" placeholder="Email Anda" required>
+          <textarea id="message" placeholder="Pesan Anda" rows="5" required></textarea>
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+  </main>
   <footer>
     &copy; <span id="year"></span> TechNova. All rights reserved.
   </footer>
   <script src="script.js"></script>
 </body>
-</html>
